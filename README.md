@@ -10,7 +10,12 @@ Postgres itself is used to control idempotency, avoiding the dual-write problem.
 The ledger_entries table is immutable and works as an audit log.
 The wallet_balance table is a snapshot table to make real-time balance reads easier for the app.
 
-![white_board.png](src/white_board.png)
+![/images/white_board.png](images/white_board.png)
+
+![wallet_service.png](images/wallet_service.png)
+![transaction_service.png](images/transaction_service.png)
+![idempotency_strategy.png](images/idempotency_strategy.png)
+
 
 This repository contains a Spring Boot API named `wallet` and a Docker Compose setup to run the API together with a PostgreSQL database.
 
